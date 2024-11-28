@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+body {
+  font-family: "Tajawal";
+  color: #0d0d0d;
+}
+
+nav {
+  background: transparent;
+  backdrop-filter: blur(8px);
+}
+
+.container-fluid {
+  background-image: url(imgs/about.png);
+  background-size: cover;
+  width: 100%;
+  height: 396px;
+}
+
+.about-img {
+  border-radius: 3px;
+}
+
+.about-left,
+.about-right {
+  border-radius: 3px;
+  background-color: #dfe5f2;
+  color: #0d0d0d;
+}
+
+.about-left p,
+.about-right p {
+  width: 340px;
+  height: 190px;
+}
+
+@media (min-width: 767px) {
+  .about-left {
+    left: 25px;
+  }
+
+  .about-right {
+    right: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  nav img {
+    height: 45px;
+  }
+
+  .container-fluid {
+    height: 256px;
+  }
+
+  .about-left,
+  .about-right {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  .container-fluid {
+    height: 190px;
+  }
+
+  .about-left p,
+  .about-right p {
+    width: 250px;
+    height: auto;
+    font-size: 14px;
+  }
+
+  .about-img {
+    height: 270px;
+    width: 245px;
+  }
+}
