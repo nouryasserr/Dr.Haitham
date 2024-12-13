@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+body {
+  font-family: "Tajawal";
+}
+
+h3 {
+  color: #103543;
+}
+
+.light-bg {
+  background-color: #eaf0f3;
+}
+
+.btn {
+  background-color: #2b718c;
+  color: #eaf0f3;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 3px;
+  width: fit-content;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #246179;
+  color: #eaf0f3;
+}
+
+/* breif */
+.secondary-text {
+  font-size: 14px;
+  color: #164355;
+}
+
+li::marker {
+  color: #164355;
+}
+
+.bg {
+  background-image: url(imgs/location.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* end-breif */
+
+/* about */
+.about-img {
+  border-radius: 3px;
+}
+
+.position-absolute {
+  transform: translateY(15px);
+}
+
+.about {
+  border-radius: 3px;
+  background-color: #c0d3dc;
+  color: #103543;
+  height: 300px;
+}
+
+#about {
+  height: 250px;
+}
+
+.article {
+  -webkit-columns: 350px 2;
+  -moz-columns: 350px 2;
+  columns: 350px 2;
+  gap: 25px;
+}
+/* end-about */
+
+/* testimonials */
+.special-word {
+  color: #246179;
+  font-size: larger;
+}
+
+.review {
+  transform: translateY(-30px);
+  right: 20px;
+}
+
+.reviews-card {
+  width: 18rem;
+}
+
+.review-card-body {
+  transform: translateY(-30px);
+}
+
+.anchor-link {
+  color: #2b718c;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.anchor-link:hover {
+  color: #246179;
+  text-decoration: underline;
+}
+/* end-testimonials */
+
+/* intro */
+.container-fluid {
+  background-color: #00113f;
+  background-image: url(imgs/intro.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 488px;
+}
+/* end-intro */
+
+/* services */
+.services-card {
+  width: 23rem;
+}
+/* end-services */
+
+/* responsive */
+@media (max-width: 991px) {
+  /* brief */
+  .bg {
+    height: 350px;
+  }
+  /* end-brief */
+
+  /* intro */
+  .container-fluid {
+    height: 300px;
+  }
+  /* end-into */
+
+  /* about-surgery */
+  #about {
+    height: 285px;
+  }
+  /* end-about-surgery */
+}
+
+@media (min-width: 767px) {
+  /* slider */
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  /* end-slider */
+
+  /* bief */
+  li {
+    text-wrap: nowrap;
+  }
+  /* end-brief */
+
+  /* about */
+  .about-left {
+    left: 15px;
+  }
+
+  .about-right {
+    right: 15px;
+  }
+
+  .about-card-left {
+    padding-left: 15px;
+  }
+
+  .about-card-right {
+    padding-right: 15px;
+  }
+  /* end-about */
+}
+
+@media (max-width: 767px) {
+  /* nav */
+  nav img {
+    height: 40px;
+  }
+  /* end-nav */
+
+  /* about */
+  .about-left,
+  .about-right {
+    bottom: 20px;
+  }
+  /* end-about */
+
+  /* breif */
+  .bg {
+    height: 200px;
+  }
+  /* end-breif */
+
+  /* intro */
+  .container-fluid {
+    height: 246px;
+  }
+  /* end-intro */
+
+  /* video */
+  video {
+    width: 300px;
+    height: 300px;
+  }
+  /* end-video */
+}
+
+@media (max-width: 426px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* breif */
+  .bg {
+    height: 150px;
+  }
+  /* end-breif */
+
+  /* about */
+  .about,
+  #about {
+    height: auto;
+  }
+
+  .about-img {
+    height: 270px;
+    width: 245px;
+  }
+  /* end-about */
+
+  /* into */
+  .container-fluid {
+    height: 140px;
+  }
+  /* end-intro */
+}
