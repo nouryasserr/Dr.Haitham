@@ -57,11 +57,12 @@ li::marker {
   border-radius: 3px;
   background-color: #c0d3dc;
   color: #103543;
-  height: 300px;
+  min-height: 300px;
+  width: 100%;
 }
 
 #about {
-  height: 250px;
+  height: 230px;
 }
 
 .article {
@@ -120,6 +121,14 @@ li::marker {
 .services-card {
   width: 23rem;
 }
+
+.card-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+}
 /* end-services */
 
 /* responsive */
@@ -135,12 +144,6 @@ li::marker {
     height: 300px;
   }
   /* end-into */
-
-  /* about-surgery */
-  #about {
-    height: 285px;
-  }
-  /* end-about-surgery */
 }
 
 @media (min-width: 767px) {
