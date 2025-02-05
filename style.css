@@ -27,6 +27,22 @@ h3 {
   color: #eaf0f3;
 }
 
+/* slider */
+.round-borders {
+  border-radius: 125px 125px 0 0;
+}
+
+.carousel-indicators {
+  bottom: -35px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+/* end-slider */
+
 /* breif */
 .secondary-text {
   font-size: 14px;
@@ -54,7 +70,8 @@ li::marker {
 }
 
 .about {
-  border-radius: 3px;
+  border-radius: 25px;
+  border: 2px solid #103543;
   background-color: #c0d3dc;
   color: #103543;
   min-height: 300px;
@@ -133,6 +150,12 @@ li::marker {
 
 /* responsive */
 @media (max-width: 991px) {
+  /* slider */
+  .round-borders {
+    border-radius: 75px 75px 0 0;
+  }
+  /* end-slider */
+
   /* brief */
   .bg {
     height: 350px;
@@ -147,14 +170,6 @@ li::marker {
 }
 
 @media (min-width: 767px) {
-  /* slider */
-  .carousel-control-next-icon,
-  .carousel-control-prev-icon {
-    width: 3rem;
-    height: 3rem;
-  }
-  /* end-slider */
-
   /* bief */
   li {
     text-wrap: nowrap;
@@ -226,6 +241,12 @@ li::marker {
   p {
     font-size: 14px;
   }
+
+  /* slider */
+  .round-borders {
+    border-radius: 45px 45px 0 0;
+  }
+  /* end-slider */
 
   /* breif */
   .bg {
